@@ -60,7 +60,7 @@ gulp.task('deploy', function () {
 });
 
 gulp.task('js', function() {
-  gulp.src('dist/js/*.js')
+  gulp.src('js/*.js')
     .pipe(size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream:true}));
