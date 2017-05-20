@@ -1,1 +1,33 @@
+// Vendor packages
+// Bootstrap, jQuery UI etc.
+
+//@import 'vendors/_bootstrap.scss';
+
+// Helpers
+// Functions, variables, mixins etc...
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+
+// Base
+// Reset, typography etc.
+@import 'base/reset';
+@import 'base/typography';
 @import 'base/base';
+
+// Components
+// Buttons, navigation, carousel etc.
+@import 'components/buttons';
+@import 'components/navigation';
+
+// Layout
+// Header, footer, grid etc.
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/forms';
+
+// Pages
+// CSS related to each page
+@import 'pages/home';

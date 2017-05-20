@@ -1,6 +1,9 @@
 {
   "name": "gulp-starter-env",
   "version": "0.1.0",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.11.1",
@@ -20,8 +23,10 @@
     "gulp-sass": "^2.1.1",
     "gulp-sass-lint": "^1.1.1",
     "gulp-size": "^2.0.0",
-    "gulp-uglify": "^1.5.1",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
     "imagemin-pngquant": "^4.2.0",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "mocha": "^3.4.1"
   }
 }

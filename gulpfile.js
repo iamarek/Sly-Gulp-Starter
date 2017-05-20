@@ -3,7 +3,7 @@ var gulp           = require('gulp'),
     rename         = require('gulp-rename'),
     cssmin         = require('gulp-minify-css'),
     concat         = require('gulp-concat'),
-    uglify         = require('gulp-uglify'),
+    uglify          = require('gulp-uglify'),
     jshint         = require('gulp-jshint'),
     scsslint       = require('gulp-sass-lint'),
     cache          = require('gulp-cached'),
@@ -17,7 +17,8 @@ var gulp           = require('gulp'),
     plumber        = require('gulp-plumber'),
     deploy         = require('gulp-gh-pages'),
     notify         = require('gulp-notify'),
-    injectPartials = require('gulp-inject-partials');
+    injectPartials = require('gulp-inject-partials'),
+    useref         = require('gulp-useref');
 
 
 gulp.task('scss', function() {
@@ -59,10 +60,8 @@ gulp.task('deploy', function () {
 });
 
 gulp.task('js', function() {
-  gulp.src('js/*.js')
-    .pipe(uglify())
+  gulp.src('dist/js/*.js')
     .pipe(size({ gzip: true, showFiles: true }))
-    .pipe(concat('j.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(reload({stream:true}));
 });
@@ -85,6 +84,12 @@ gulp.task('minify-html', function() {
     .pipe(reload({stream:true}));
 });
 
+gulp.task('min-js', function () {
+  gulp.src('dist/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'))
+});
+
 gulp.task('jshint', function() {
   gulp.src('js/*.js')
     .pipe(jshint())
@@ -93,7 +98,7 @@ gulp.task('jshint', function() {
 
 gulp.task('watch', function() {
   gulp.watch('scss/**/*.scss', ['scss']);
-  gulp.watch('js/*.js', ['jshint', 'js']);
+  gulp.watch('js/*.js', ['jshint', 'index', 'js']);
   gulp.watch('./**/*.html', ['index']);
   gulp.watch('img/*', ['imgmin']);
 });
@@ -109,14 +114,18 @@ gulp.task('imgmin', function () {
 });
 
 gulp.task('index', function () {
-  return gulp.src('./index.html')
+  return gulp.src('html/*.html')
            .pipe(injectPartials({
               removeTags: true,
               start: '{% include {{path}}',
               end: ' %}'
            }))
+           .pipe(useref({
+             searchPath: './'
+           }))
            .pipe(reload({stream:true}))
            .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['browser-sync', 'js', 'imgmin', 'index', 'scss', 'watch']);
+gulp.task('default', ['browser-sync', 'imgmin', 'index', 'js', 'scss', 'watch']);
+gulp.task('prod', ['min-js']);

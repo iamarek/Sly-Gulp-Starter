@@ -1,9 +1,4 @@
-
-
-Template created by IAMAREK.COM
----
-
-###Gulp starter created by Una Kravets (https://github.com/una), modified by IAMAREK.COM
+### Gulp starter based on starter by Una Kravets (https://github.com/una), modified by Arkadiusz Chatys (http://www.iamarek.com)
 
 What's set up here:
 
@@ -17,6 +12,10 @@ What's set up here:
 - Image Minification
 - GH-Pages deployment from dist/ folder
 - Gulp Inject Partials
+- JS Minification
+- JS Concatenation
+- HTML Partials
+- Mocha tests
 
 ## To Get Started:
 
@@ -33,6 +32,10 @@ What's set up here:
 ## Including Partials
 
 To include partial create keyword `{% include path/to/your/file.html %}`.
+
+## Mocha testing
+
+To use Mocha tests run `npm test` in your terminal
 
 ## Linting
 
