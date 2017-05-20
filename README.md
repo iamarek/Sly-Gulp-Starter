@@ -35,17 +35,17 @@
 
 To concatenate JavaScript files go to your html file and add all files in order inside of tags like so:
 
-`<!-- build:js js/main.js -->
+```<!-- build:js js/main.js -->
   <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
-<!-- endbuild -->`
+<!-- endbuild -->```
 
 To concatenate CSS files go to your html file and add all files in order inside of tags like so:
 
-`<!-- build:css css/main.css -->
+```<!-- build:css css/main.css -->
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/main.css">  
-<!-- endbuild -->`
+<!-- endbuild -->```
 
 ## Including Partials
 
