@@ -1,4 +1,4 @@
-## Project gulp starter - Arkadiusz Chatys [www.iamarek.com](http://wwww.iamarek.com)
+## Project gulp starter - Arkadiusz Chatys [www.iamarek.com](http://www.iamarek.com)
 ##### Gulp starter based on starter by Una Kravets (https://github.com/una)
 
 ## What's included:
