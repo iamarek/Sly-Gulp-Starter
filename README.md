@@ -1,4 +1,5 @@
-![Sly Gulp Starter](https://raw.githubusercontent.com/iamarek/sly-gulp-starter/master/img/logo.png)
+![](https://github.com/iamarek/sly-gulp-starter/blob/master/img/logo.png)
+
 ## Project gulp starter - Arkadiusz Chatys [www.iamarek.com](http://www.iamarek.com)
 ##### Gulp starter based on starter by Una Kravets (https://github.com/una)
 
