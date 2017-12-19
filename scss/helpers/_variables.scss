@@ -1,5 +1,28 @@
-$container-desktop-wide: 1140px;
-$container-desktop-small: 960px;
-$container-tablet: 720px;
-$container-mobile: 540px;
+/*
+ * BREAKPOINTS
+ *
+ * Breakpoints for media queries across the project
+ */
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$desktop-wide: 1200px; 
+
+/*
+ * GRID
+ *
+ * Variables for Bootstrap 4 flexbox Frid
+ */
 $grid-gutter: 15px;
+$container-mobile: $mobile - (2 * $grid-gutter);
+$container-tablet: $tablet - (2 * $grid-gutter);
+$container-desktop-small: $desktop - (2 * $grid-gutter);
+$container-desktop-wide:  $desktop-wide - (2 * $grid-gutter);
+
+/*
+ * BASIC CONFIGURATION
+ *
+ * Configuration for basic elements
+ */
+$base-font-size: 16px;
+$base-font-family: 'Helvetica', 'Arial', sans-serif;

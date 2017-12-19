@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $mobile) {
+  .container {
+    max-width: $container-mobile;
+  }
+}
+
+@media (min-width: $tablet) {
+  .container {
+    max-width: $container-tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    max-width: $container-desktop-small;
+  }
+}
+
+@media (min-width: $desktop-wide) {
+  .container {
+    max-width: $container-desktop-wide;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -$grid-gutter;
+  margin-left: -$grid-gutter;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

@@ -1,6 +1,15 @@
 ## Project gulp starter - Arkadiusz Chatys [www.iamarek.com](http://www.iamarek.com)
 ##### Gulp starter based on starter by Una Kravets (https://github.com/una)
 
+## Table of content
+1. [What's included](#whats-included)
+2. [How to start](#how-to-start)
+3. [Commands](#commands)
+4. [Concatenating files](#concatenating-files)
+5. [Including Partials](#including-partials)
+6. [Mocha testing](#mocha-testing)
+
+
 ## What's included:
 
 - Scss support (gulp-sass)
@@ -14,14 +23,13 @@
 - Autoprefixer (gulp-autoprefixer)
 - Browser Sync (browser-sync)
 - Log size of project (gulp-size)
-- GitHub pages deploy (gulp-gh-pages)
 - Injecting Partials (gulp-inject-partials)
 - Concatenating CSS/JavaScript files (gulp-useref)
 
 ## How to start:
 
-1. Clone this repository running `git clone git@github.com:iamarek/project-gulp-starter.git` in your terminal.
-2. Go to folder inside running `cd project-gulp-starter`.
+1. Clone this repository running `git clone git@github.com:iamarek/Sly-Gulp-Starter.git` in your terminal.
+2. Go to folder inside running `cd Sly-Gulp-Starter`.
 3. Run `npm install` to install all dependencies
 4. Run `gulp` to start working on project
 
