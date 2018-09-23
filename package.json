@@ -2,6 +2,8 @@
   "name": "gulp-starter-env",
   "version": "0.1.0",
   "scripts": {
+    "serve": "gulp",
+    "build": "gulp build",
     "test": "mocha"
   },
   "dependencies": {},
