@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "serve": "gulp",
+    "start": "gulp",
     "build": "gulp build",
     "test": "mocha"
   },

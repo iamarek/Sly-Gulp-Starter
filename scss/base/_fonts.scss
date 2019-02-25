@@ -1,0 +1,11 @@
+/* FONT MIXIN USAGE
+  @include font-face(
+    <NAME_OF_FONT>,
+    <FONT_PATH>,
+    <FONT_WEIGHT>,
+    <FONT_STYLE>,
+    <EXTENSION>
+  );
+
+  example: @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+*/

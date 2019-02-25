@@ -6,7 +6,7 @@
 $mobile: 576px;
 $tablet: 768px;
 $desktop: 992px;
-$desktop-wide: 1200px; 
+$desktop-wide: 1200px;
 
 /*
  * GRID
@@ -14,9 +14,9 @@ $desktop-wide: 1200px;
  * Variables for Bootstrap 4 flexbox Frid
  */
 $grid-gutter: 15px;
-$container-mobile: $mobile - (2 * $grid-gutter);
-$container-tablet: $tablet - (2 * $grid-gutter);
-$container-desktop-small: $desktop - (2 * $grid-gutter);
+$container-mobile: calc(100% - (2 * #{$grid-gutter}));
+$container-tablet: calc(100% - (2 * #{$grid-gutter}));
+$container-desktop-small: calc(100% - #{$grid-gutter});
 $container-desktop-wide:  $desktop-wide - (2 * $grid-gutter);
 
 /*
@@ -26,3 +26,14 @@ $container-desktop-wide:  $desktop-wide - (2 * $grid-gutter);
  */
 $base-font-size: 16px;
 $base-font-family: 'Helvetica', 'Arial', sans-serif;
+
+/*
+ * FONTS
+ */
+
+$font-extrabold: 700;
+$font-bold: 600;
+$font-semibold: 500;
+$font-regular: 400;
+$font-light: 300;
+$font-extralight: 200;

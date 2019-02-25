@@ -17,17 +17,21 @@
 @import 'base/typography';
 @import 'base/base';
 
-// Components
-// Buttons, navigation, carousel etc.
-@import 'components/buttons';
-@import 'components/navigation';
+// Global Components
+// Buttons, navigation, header etc.
+@import 'components/global/buttons';
+@import 'components/global/forms';
+@import 'components/global/navigation';
+@import 'components/global/footer';
+@import 'components/global/header';
+
+// Local Components
+// Particular components for single pages
+// @import 'components/hompage/banner';
 
 // Layout
-// Header, footer, grid etc.
+// Grid etc.
 @import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/forms';
 
 // Pages
 // CSS related to each page
